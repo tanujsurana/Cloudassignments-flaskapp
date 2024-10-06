@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Information</h2>
+        <p><strong>Username:</strong> {{ user['username'] }}</p>
+        <p><strong>First Name:</strong> {{ user['firstname'] }}</p>
+        <p><strong>Last Name:</strong> {{ user['lastname'] }}</p>
+        <p><strong>Email:</strong> {{ user['email'] }}</p>
+        <a href="index.html" class="back-link">Go to Login</a>
+    </div>
+</body>
+</html>
